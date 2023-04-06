@@ -1,0 +1,725 @@
+:root{
+    --primary-color: #222831;
+    --secondary-color: #DDDDDD;
+    --third-color: #293c50;
+    --fourth-color: #796EBD;
+}
+
+body{
+    background-color: var(--primary-color);
+    
+}
+
+.header{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    color: var(--secondary-color);
+}
+
+h1{
+
+    color: var(--fourth-color);
+    font-size: 50px;
+}
+
+
+
+h2{
+
+    
+    font-size: xx-large
+}
+
+#recomendacion{
+
+    font-size: x-large;
+    
+}
+
+fieldset{
+    margin: 10px 60px;
+    padding-bottom: 25px;
+    border-color: var(--secondary-color);
+    
+    font-family: sans-serif;
+}
+
+legend{
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 18px;
+
+}
+
+
+
+#radiosection{
+
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.boton{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 40%;
+    margin-right: 40%;
+    border: 4px solid var(--fourth-color);
+    border-radius: 20px;
+    padding: 20px;
+    color: var(--fourth-color);
+    font-size: large;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: scale 0.3s linear;
+    user-select: none;
+}
+
+.boton:hover{
+
+    scale: 1.1;
+
+}
+
+
+#coloresNuevos{
+
+    padding: 20px 20px;
+
+}
+
+
+.centrar{
+    display: flex;
+    justify-content: center;
+
+}
+
+.paletasDeColores{
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    height: 500px;
+    width: 90%;
+    background-color: var(--third-color);
+}
+
+
+/*
+ clases base para los 4 colores, si no tienen width y height cuando se activa toggle
+ solo aparece el texto con color, esto es un problema a solucionar
+*/
+.colorr1{
+
+    width: 200px;
+    height: 400px;
+    background-color: wheat;
+    position: relative;
+    
+
+}
+
+.colorr2{
+    width: 200px;
+    height: 400px;
+    display: none;
+    position: relative;
+}
+
+.colorr3{
+    width: 200px;
+    height: 400px;
+    display: none;
+    position: relative;
+}
+
+.colorr4{
+    width: 200px;
+    height: 400px;
+    display: none;   
+    position: relative;
+}
+
+/*
+clases a las que cambian los div de los colores cuando se activa toggle
+*/
+
+.colorB{
+
+    width: 200px;
+    height: 400px;
+    display: block;
+    position: relative;
+}
+.colorC{
+
+    width: 200px;
+    height: 400px;
+    display: block;
+    position: relative;
+}
+.colorD{
+
+    width: 200px;
+    height: 400px;
+    display: block;
+    position: relative;
+}
+
+
+/* span para el texto de los divs*/
+
+#span1,#span2,#span3,#span4{
+
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 5px 20px;
+    font-size: x-large;
+    cursor:text;
+
+    transition: font-size 0.5s ease-in-out;
+      
+}
+
+
+#span1:hover,#span2:hover,#span3:hover,#span4:hover{
+
+    
+    font-size: xx-large;
+    
+
+}
+
+
+/*iconos de candados*/
+.candados{
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+   
+}
+
+.imgCerrado{
+
+    position: absolute;
+    top: 340px;
+    left: 41%;
+    display: none;
+    cursor: pointer;
+}
+
+.imgCerradoPantalla{
+
+    position: absolute;
+    top: 340px;
+    left: 41%;
+    display: block;
+    cursor: pointer;
+
+}
+
+
+.imgAbierto{
+
+    position: absolute;
+    top: 340px;
+    left: 41%;
+    display: block;
+    cursor: pointer;
+}
+
+.imgAbiertoInvisible{
+
+    position: absolute;
+    top: 340px;
+    left: 41%;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* Para hacer la web responsiva cambio el tamaño 
+de los divs que contienen los colores  */
+
+@media (max-width: 1030px){
+
+    /*paletas de colores*/
+
+    .paletasDeColores { 
+    
+        width: 100%;
+        height: 300px;
+        
+    
+    }
+
+    .colorr1{
+
+        width: 200px;
+        height: 200px;
+        
+    }
+
+   .colorr2{
+
+        width: 200px;
+        height: 200px;
+       
+    }
+
+
+    .colorr3{
+
+        width: 200px;
+        height: 200px;
+
+
+    }
+
+    .colorr4{
+
+        width: 200px;
+        height: 200px;
+
+
+    }
+
+
+
+/*candados*/
+
+.candados{
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+   
+}
+
+.imgCerrado{
+
+    position: absolute;
+    top: 150px;
+    left: 41%;
+    display: none;
+    cursor: pointer;
+}
+
+.imgCerradoPantalla{
+
+    position: absolute;
+    top: 150px;
+    left: 41%;
+    display: block;
+    cursor: pointer;
+
+}
+
+
+.imgAbierto{
+
+    position: absolute;
+    top: 150px;
+    left: 41%;
+    display: block;
+    cursor: pointer;
+}
+
+.imgAbiertoInvisible{
+
+    position: absolute;
+    top: 150px;
+    left: 41%;
+    display: none;
+    cursor: pointer;
+}
+
+/*spans de texto*/
+
+#span1,#span2,#span3,#span4{
+
+    position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 5px 20px;
+    font-size: large;
+    cursor:text;
+
+    transition: font-size 0.5s ease-in-out;
+      
+}
+
+
+#span1:hover,#span2:hover,#span3:hover,#span4:hover{
+
+    
+    font-size: x-large;
+    
+
+}
+
+}
+
+@media (max-width: 900px) {
+
+
+    
+
+ /*paletas de colores*/
+
+    .paletasDeColores { 
+    
+    width: 90%;
+    height: 700px;
+    
+    
+
+    }
+
+    .colorr1{
+
+        width: 300px;
+        height: 300px;
+        margin: 20px 10px; 
+    
+    
+    }
+
+    .colorr2{
+
+        width: 300px;
+        height: 300px;
+        margin: 20px 10px;
+        
+    }
+
+
+    .colorr3{
+
+        width: 300px;
+        height: 300px;
+        margin: 20px 10px;
+        
+   
+
+    }
+
+    .colorr4{
+
+        width: 300px;
+        height: 300px;
+        margin: 20px 10px;
+
+    }
+
+    /*candados*/
+
+.candados{
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+   
+}
+
+.imgCerrado{
+
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    display: none;
+    cursor: pointer;
+}
+
+.imgCerradoPantalla{
+
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    display: block;
+    cursor: pointer;
+
+}
+
+
+.imgAbierto{
+
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    display: block;
+    cursor: pointer;
+}
+
+.imgAbiertoInvisible{
+
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    display: none;
+    cursor: pointer;
+}
+
+}
+
+@media (max-width: 764px){
+
+
+/*paletas de colores*/
+
+.paletasDeColores { 
+    
+    width: 90%;
+    height: 700px;
+    
+    
+
+    }
+
+    .colorr1{
+
+        width: 300px;
+        height: 300px;
+        margin: 20px 10px; 
+    
+    
+    }
+
+    .colorr2{
+
+        width: 300px;
+        height: 300px;
+        margin: 20px 10px;
+        
+    }
+
+
+    .colorr3{
+
+        width: 300px;
+        height: 300px;
+        margin: 20px 10px;
+        
+   
+
+    }
+
+    .colorr4{
+
+        width: 300px;
+        height: 300px;
+        margin: 20px 10px;
+
+    }
+
+    /*candados*/
+
+.candados{
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+   
+}
+
+.imgCerrado{
+
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    display: none;
+    cursor: pointer;
+}
+
+.imgCerradoPantalla{
+
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    display: block;
+    cursor: pointer;
+
+}
+
+
+.imgAbierto{
+
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    display: block;
+    cursor: pointer;
+}
+
+.imgAbiertoInvisible{
+
+    position: absolute;
+    top: 180px;
+    left: 43%;
+    display: none;
+    cursor: pointer;
+}
+
+}
+
+@media (max-width: 728px){
+
+
+body{
+    min-width: 450px;
+}
+
+
+/*paletas de colores*/
+
+.paletasDeColores { 
+    
+    width: 100%;
+    height: 600px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+    }
+
+    .colorr1{
+
+        width:  98%;
+        height: 130px;
+         
+    
+    
+    }
+
+    .colorr2{
+
+        width:  98%;
+        height: 130px;
+        
+        
+    }
+
+
+    .colorr3{
+
+        width:  98%;
+        height: 130px;
+        
+        
+   
+
+    }
+
+    .colorr4{
+
+        width:  98%;
+        height: 130px;
+        
+
+    }
+
+    /*candados*/
+
+.candados{
+    position: relative;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+   
+}
+
+.imgCerrado{
+
+    position: absolute;
+    top: 37px;
+    left: 80%;
+    display: none;
+    cursor: pointer;
+}
+
+.imgCerradoPantalla{
+
+    position: absolute;
+    top: 37px;
+    left: 80%;
+    display: block;
+    cursor: pointer;
+
+}
+
+
+.imgAbierto{
+
+    position: absolute;
+    top: 37px;
+    left: 80%;
+    display: block;
+    cursor: pointer;
+}
+
+.imgAbiertoInvisible{
+
+    position: absolute;
+    top: 37px;
+    left: 80%;
+    display: none;
+    cursor: pointer;
+}
+
+/* texto */
+#span1,#span2,#span3,#span4{
+
+    position: absolute; top: 50%; left: 20%; transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 20px 20px;
+    font-size: x-large;
+    cursor:text;
+
+      
+}
+
+/*boton de generar colores*/
+.boton{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+
+}
+
+}

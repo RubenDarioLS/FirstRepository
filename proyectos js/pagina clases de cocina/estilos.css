@@ -1,0 +1,164 @@
+:root{
+	--primary-color:#f391cd;
+	--secondary-color:antiquewhite;
+	--tertiary-color: #06081d;
+	--texto-nav:#333;
+	scroll-behavior: smooth;
+	
+}
+
+body{
+
+	margin: 0px;
+	padding:0px;
+	background-color: var(--secondary-color);
+	
+}
+
+/* nav */
+
+
+
+
+
+.logo a {
+	font-size: 2rem;
+	color: var(--texto-nav) ;
+	text-decoration: none;
+}
+
+nav{
+
+	background-color: var(--secondary-color);
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.4);
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li a {
+	font-size: 1.5rem;
+	color: #333;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: var(--primary-color);
+}
+
+
+
+
+/*Inicio y header*/
+
+
+.fondo1{
+	
+	background-image:url(imagenes/imagen-1.jpg);
+	
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: bottom;
+	height: 500px;
+	width: 100%;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+
+
+.containerInicio{
+
+	background-color: rgba(250, 235, 215, 0.6);
+	
+	font-family:'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+	
+}
+
+h1{
+	margin: 0px auto;
+}
+
+.containerInicio p{
+	font-size: 23px;
+	line-height: 2.5em;
+}
+
+
+
+.fondo2{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	
+}
+
+.clasesDeCocina{
+
+	background-color: var(--primary-color);
+	font-family:'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 0px auto;
+	padding: 20px 30px;
+	font-size: x-large;
+	flex-basis: 50%;
+	flex-grow: 0;
+}
+
+.clasesDeCocina > h2{
+	text-align: center;
+}
+
+.clasesDeCocina > p{
+	padding: 15px 25px;
+	text-indent: 1em;
+	text-align: justify;
+	line-height: 2em;
+}
+	
+
+.recetas{
+	background-image:url(imagenes/imagen-2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 900px;
+	font-family:'Lucida Sans', 'Lucida Sans Regular','Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin: 0px auto;
+	padding: 20px 60px;
+	font-size: x-large;
+	color: var(--tertiary-color);
+	flex-basis: 50%; /* con estas 2 propiedades flex cada contenedor ocupa el 50%*/
+	flex-grow: 0;
+}
+
+.recetas > h2 {
+	text-align: center;
+	color: var(--primary-color);
+	background-color: var(--tertiary-color);
+	border-radius: 20px;
+}
+
+.recetas > p{
+	background: rgba(250, 235, 215, 0.6);
+	padding: 20px 20px;
+	border-radius: 20px;
+}
+
+
+
+.fondo3{
+
+	background-image:url(imagenes/imagen-3.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}

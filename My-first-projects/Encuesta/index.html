@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta para la mejora del servicio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="container">
+    <h1 id="title">Encuesta para mejorar el servicio</h1>
+    <p id="description">Esta encuesta tiene el fin de recaudar información para poder mejorar nuestros servicios</p>
+    
+    <form action="#" method="post" id="survey-form">
+        <div id="first-part">
+            <label id="name-label" for="name">Nombre:<input id="name" type="text" placeholder="Coloque su nombre aquí" required>
+            </label>
+
+            <label id="email-label" for="email">Email:<input id="email" type="email" placeholder="Coloque su email aquí" required>
+            </label>
+
+            <label id="number-label" for="number">Edad:<input min="18" max="120" id="number" type="number" placeholder="Coloque su edad aquí" required>
+            </label>
+
+            <label id="options" for="dropdown"> ¿Cómo te enteraste de nosotros?
+                <select id="dropdown" name="dropdown">
+                  <option value="">(seleccione una opción)</option>
+                  <option value="1">Google Maps</option>
+                  <option value="2">Redes Sociales</option>
+                  <option value="3">Me lo comento un/a amigo/a</option>
+                  <option value="4">Otro</option>
+                </select>
+            </label>
+        </div>
+
+
+        <div id="second-part">
+             
+            <p id="atención">¿Cómo fue la atención que recibió?</p>
+            <label for="buena-atención" class="atención-label">
+                <input class="input-radio" type="radio" name="atención al cliente" value="atencion-buena" id="buena-atención">La atención que recibí fue buena.
+            </label>
+
+            <label for="mala-atención" class="atención-label">
+                <input class="input-radio" type="radio" name="atención al cliente" value="atencion-mala" id="mala-atención">La atención que recibí fue mala.
+            </label>
+
+            <label class="comentario-1" for="comentarios">¿Te gustaría agregar algún comentario sobre la atención al cliente de nuestro comercio?
+                <textarea name="comentarios" id="comentarios" cols="90" rows="5" placeholder="Escriba aquí"></textarea>
+            </label>
+            
+        </div>
+
+
+        <div id="third-part">
+            <p id="aspectos-para-mejorar"> ¿En qué aspectos crees que deberíamos mejorar?</p>
+            
+            <label for="atención-al-cliente" class="checkbox-label">
+                <input id="atención-al-cliente" name="atención-al-cliente" value="atención-al-cliente" type="checkbox" class="input-checkbox"> Atención al cliente
+            </label>
+        
+            <label for="presencia-redes-sociales" class="checkbox-label">
+                <input id="presencia-redes-sociales" name="presencia-redes-sociales" value="presencia-redes-sociales" type="checkbox" class="input-checkbox"> Presencia en redes Sociales
+            </label>
+        
+            <label for="ofertas" class="checkbox-label">
+                <input id="ofertas" name="ofertas" value="ofertas" type="checkbox" class="input-checkbox"> Ofertas
+            </label>
+        
+            <label for="diversidad-de-productos" class="checkbox-label">
+                <input id="diversidad-de-productos" name="diversidad-de-productos" value="diversidad-de-productos" type="checkbox" class="input-checkbox"> Diversidad de productos
+            </label>
+        
+            <label for="envios" class="checkbox-label">
+                <input id="envios" name="envios" value="envios" type="checkbox" class="input-checkbox"> Envios
+            </label>
+        
+            <label for="ninguna" class="checkbox-label">
+                <input id="ninguna" name="ninguna" value="ninguna" type="checkbox" class="input-checkbox"> Ninguna, muy buen servicio
+            </label>
+            
+            <label for="otro" class="checkbox-label" id="otro-label">
+                <input id="otro" name="otro" value="otro" type="checkbox" class="input-checkbox"> Otro
+            </label>
+
+            
+            <label class="otros-aspectos-label" for="otros-aspectos" id="otros-aspectos-label" >¿En qué otro aspecto estás pensando?
+                <textarea name="otros-aspectos" id="otros-aspectos" cols="90" rows="5" placeholder="Escriba aquí"></textarea>
+            </label>
+            
+            
+        </div>
+        
+        
+        <button id="submit" value="submit" type="submit">Submit</button>
+    </form>
+    </div>
+    <script src="interactividad.js" ></script>
+</body>
+</html>

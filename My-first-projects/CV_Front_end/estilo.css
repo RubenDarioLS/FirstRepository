@@ -1,0 +1,254 @@
+:root{
+    font-family: sans-serif;
+    --principal-color: #5a1886;
+    --secondary-color:rgb(238, 238, 238);
+    --text-principal-color: rgb(0, 0, 0);
+    --text-secondary-color: #fcb045;
+}
+body{
+    background-color: var(--secondary-color);
+    padding: 0px;
+    margin: 0px;
+    width:100%;
+    
+}
+h1{
+    color: var(--principal-color);
+    text-align: center;
+}
+
+/* Botones del menu de la nav*/
+nav{
+   display: flex;
+   justify-content: center; 
+}
+
+.container{
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; /*este me deja ver la altura de los elementos en el container */
+    margin-bottom: 20px;
+}
+
+a{
+   margin: 2px;
+   padding: 5px 25px;
+   border-style: none;
+   border-color:black;
+   border-radius: 10px;
+   background-color: var(--principal-color);
+   color: var(--secondary-color);
+   font-family: 'Montserrat', sans-serif;
+   font-size: large;
+   text-decoration: none;
+   text-align: center;
+}
+
+@media (max-width: 768px) {
+    .item-1,.item-2,.item-3,.item-4{
+        width: 100%;
+    }
+}
+
+
+/* Información personal*/
+.container-2{
+    background: #5a1886; 
+    background: -webkit-linear-gradient(to right, #5a1886, #fcb045);
+    background: linear-gradient(to right,  #5a1886, #fcb045);
+    color: var(--secondary-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    
+}
+#foto-perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+
+/* Educación*/
+#Educación{
+    margin: 50px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color:var(--principal-color);
+    
+    
+}
+.container-3{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color:var(--principal-color); 
+    margin: 0px;
+    margin-bottom: 70px;
+    
+}   
+.item-5{
+    font-size: large;
+    width:300px;
+    font-family: 'Montserrat', sans-serif;
+    border-style: solid;
+    border-radius: 25px;
+    margin: 15px;
+    line-height: 40px;
+    padding: 30px 30px;
+   
+}
+
+.item-6{
+    
+    width:300px;
+    font-family: 'Montserrat', sans-serif;
+    border-style: solid;
+    border-radius: 25px;
+    margin: 15px;
+    line-height: 40px;
+    padding: 30px 30px;
+
+}
+
+@media (max-width: 768px){
+    .item1,.item2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* Experiencia*/
+#Experiencia{
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 50px;
+    background-color: var(--principal-color);
+    margin: 0px;
+    font-size: x-large;
+}
+.container-4{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--principal-color);
+    padding: 100px 20px;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+
+    background: var(--principal-color);
+    color: var(--secondary-color);
+
+}
+
+/* Habilidades */
+
+#Habilidades{
+    display: flex;
+    justify-content: center;
+    color: var(--principal-color);
+    font-family: "Montserrat", sans-serif;
+    padding: 80px 0px;
+    background-color: var(--text-secondary-color);
+    margin: 0px;
+    font-size: x-large;
+}
+.container-5{
+    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--text-secondary-color);
+    margin: 0px;
+    padding-bottom: 80px;
+    
+}
+
+
+
+#item-7,#item-9,#item-11{
+    color: var(--principal-color);
+    font-weight: bold;
+    font-size: large;
+    background-color: var(--text-secondary-color);
+    padding: 40px 20px;
+    border-radius: 20px;
+    border: solid;
+    font-size: large;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color, border-color, color, 1.5s;
+}
+#item-7:hover{
+    background-color: var(--principal-color);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}    
+
+#item-9:hover{
+    background-color: var(--principal-color);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}    
+
+#item-11:hover{
+    background-color: var(--principal-color);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}    
+
+
+#lista-lenguajes,#lista-bases,#lista-aptitudes{
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: var(--principal-color);
+    line-height: 80px;
+    
+}
+
+
+@media (max-width: 768px) {
+    .container-5{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+footer{
+display: flex;
+flex-direction: column;
+text-align: center;
+background-color: var(--text-secondary-color);
+color: black;
+font-size: x-large;
+}
+
+
+.ocultar {
+    visibility:hidden;
+}
+
+.mostrar {
+    visibility:visible;
+}
