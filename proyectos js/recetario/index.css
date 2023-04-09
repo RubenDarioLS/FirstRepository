@@ -1,0 +1,49 @@
+:root{
+    background: #ee9ca7;
+background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+background: linear-gradient(to right, #ffdde1, #ee9ca7); 
+    --primary-color: #5C4033;
+    --secondary-color: #211874;
+    --other-color:  #ee9ca7;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.container {
+display: flex;
+margin: 1;
+
+}
+
+aside{
+padding: 20px 20px;
+background-color: var(--primary-color);
+flex-basis: 20%;
+height: 200px;
+
+}
+
+main {
+
+align-items: center;
+text-align: center;
+flex-grow: 1;
+
+}
+
+main ul {
+    list-style-position: inside;
+    text-align: justify;
+}
